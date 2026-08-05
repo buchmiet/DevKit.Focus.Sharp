@@ -55,7 +55,8 @@ Pointer-initiated and internal focus movement remain component concerns in both 
 ## Local verification
 
 ```powershell
-dotnet test tests/DevKit.Focus.Sharp.Tests/DevKit.Focus.Sharp.Tests.csproj -c Release
+dotnet build tests/DevKit.Focus.Sharp.Tests/DevKit.Focus.Sharp.Tests.csproj -c Release
+dotnet run --project tests/DevKit.Focus.Sharp.Tests/DevKit.Focus.Sharp.Tests.csproj -c Release --no-build
 ```
 
 The project targets `netstandard2.0` and `net8.0`. It has no framework or DI dependencies.
